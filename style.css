@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans' , sans-serif;
+}
+body{
+    background-color: rgb(55, 65, 81);
+}
+
+
+/* header content  */
+header{
+    padding: 15px 10px;
+    width: 80%;
+    margin:auto;
+}
+header h1{
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(107, 114, 128);
+    margin-bottom: 5px;
+    /* text-align: center; */
+}
+
+input, button{
+    border: none;
+    outline: none;
+    background: none;
+}
+#new_task_form{
+    display: flex;
+    justify-content: space-between;
+}
+.new-task-input{
+  flex: 1;
+  background-color: rgb(31, 41, 55);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color:rgb(238, 238, 238);
+  font-size: 1.25rem;
+}
+.new-task-input::placeholder{
+    color: rgb(107, 114, 128);
+}
+
+.new-task-submit{
+    font-size: large;
+    font-weight: 700;
+    color: rgb(11, 17, 67);
+    cursor: pointer;
+    transition: 0.4s;
+    background: linear-gradient(90deg , rgb(19, 58, 200) 0% , white 100%);
+    border-radius: 12px;
+    padding: 0 8px;
+
+}
+.new-task-submit:hover{
+    opacity: 0.8;
+}
+.new-task-submit:active{
+    opacity: 0.6;
+}
+
+
+
+
+/* main part  */
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(107, 114, 128);
+    margin-bottom: 5px;
+    /* text-align: center; */
+}
+
+.tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(17, 24, 39);
+    padding: 0.7rem;
+    border-radius: 1rem;
+   margin-bottom: 1rem;
+  
+}
+.tasks .task .content{
+    width: 90%;                    /* for maintaing the input part */
+    margin: 0 auto;
+}
+.task .content .text{
+    width: 100%;
+}
+.tasks .task .content .text{
+   color: rgb(238, 238, 238);
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.tasks .task .actions{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+    color: rgb(240, 248, 255);
+}
+.task .actions button:hover{
+    opacity: 0.8;
+}
+.task .actions button:active{
+    opacity: 0.6;
+}
+.task .actions .edit{
+    color: rgb(44, 92, 202);
+}
+.task .actions .delete{
+    color: crimson;
+}
+
+
+
+
+
+
+
